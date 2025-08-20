@@ -1,8 +1,8 @@
-#1 - Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo
+import math
 
-numero_01 = int(input("Inserir um número inteiro: "))
-numero_02 = int(input("Inserir outro número inteiro: "))
+#2 - Escreva um programa que calcula a área do círculo, recebendo o raio como entrada.
 
-resultado = numero_01 // numero_02
+raio = float(input ("Digite o raio: "))
+area = math.pi * raio ** 2
 
-print (resultado)
+print (f"{area:.2f}")
