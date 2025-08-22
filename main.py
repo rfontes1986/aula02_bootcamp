@@ -1,8 +1,9 @@
-import math
+# 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 
-#2 - Escreva um programa que calcula a área do círculo, recebendo o raio como entrada.
+data_usuario = input ("Digite uma data no formato dd/mm/aaaa: ")
 
-raio = float(input ("Digite o raio: "))
-area = math.pi * raio ** 2
+lista_dia_mes_ano = data_usuario.split("/")
 
-print (f"{area:.2f}")
+print (f"O elemento 1 é o {lista_dia_mes_ano[0]}")
+print (f"O elemento 2 é o {lista_dia_mes_ano[1]}")
+print (f"O elemento 3 é o {lista_dia_mes_ano[2]}")
