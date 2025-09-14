@@ -33,5 +33,5 @@ try:
 
     print (calculator_input, "=", calculator_output)
 
-except NameError, ValueError:
+except NameError:
     print ("Error!")
