@@ -5,7 +5,8 @@ try:
         parts = calculator_input.split(str('+'))
         a = int(parts[0])
         b = int(parts[1])
-        calculator_output = a + b
+        c = int (parts[2])
+        calculator_output = a + b + c
     elif str('-') in calculator_input:
         parts = calculator_input.split(str('-'))
         a = int(parts[0])
@@ -31,7 +32,6 @@ try:
         calculator_output = a ** b
 
     print (calculator_input, "=", calculator_output)
-    
-except NameError:
-    print ("Error!")
 
+except NameError, ValueError:
+    print ("Error!")
